@@ -17,4 +17,4 @@ This Java-based calculator program supports arithmetic operations, array operati
 ## **Usage**
 1. Clone the repository:  
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/dishagupta-26/Calculator-PIJ.git
