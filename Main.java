@@ -10,10 +10,12 @@ public class Main {
         System.out.println("Welcome to the Calculator Program!");
         int choice;
 
+        // function to display menu options
         do {
             inputHandler.displayMenu();
             choice = inputHandler.getChoice();
 
+            // performing operations based on user input
             switch (choice) {
                 case 1:
                     System.out.println("Result: " + calculator.add(inputHandler.getTwoNumbers()));
