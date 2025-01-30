@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class UserInput {
     private Scanner scanner;
 
+    // initializing scanner
     public UserInput() {
         scanner = new Scanner(System.in);
     }
 
+    // displaying menu options
     public void displayMenu() {
         System.out.println("\nSelect an Operation:");
         System.out.println("1. Addition");
@@ -22,10 +24,12 @@ public class UserInput {
         System.out.print("Enter your choice: ");
     }
 
+    // reading user input
     public int getChoice() {
         return scanner.nextInt();
     }
 
+    // reading two numbers
     public int[] getTwoNumbers() {
         System.out.print("Enter first number: ");
         int num1 = scanner.nextInt();
@@ -34,11 +38,13 @@ public class UserInput {
         return new int[] { num1, num2 };
     }
 
+    // reading a single number
     public int getSingleNumber() {
         System.out.print("Enter a number: ");
         return scanner.nextInt();
     }
 
+    // reading an array
     public int[] getArrayInput() {
         System.out.print("Enter the size of the array: ");
         int size = scanner.nextInt();
